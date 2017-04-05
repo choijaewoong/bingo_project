@@ -85,5 +85,10 @@ var bingo = {
 
 
 $(function() {
-    $('.modal').modal();
+    $('.modal').modal({
+        ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+            var question = trigger.data('question');
+            modal.find('.modal-content').text(question);
+        },
+    });
 });
