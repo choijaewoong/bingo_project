@@ -18,10 +18,10 @@
         <div class="container__bingo">
             <ul class="bingo-card">
                 <li class="bingo-card--item">
-                    <a id="question-1" class="card--link" href="#modal"  data-question="question-1">Modal1</a>
+                    <a id="question-1" class="card--link" href="#modal" data-num="1" data-question="question-1">Modal1</a>
                 </li>
                 <li class="bingo-card--item">
-                    <a id="question-2" class="card--link" href="#modal"  data-question="question-2">Modal1</a>    
+                    <a id="question-2" class="card--link" href="#modal" data-num="2" data-question="question-2">Modal1</a>    
                 </li>
                 <!--<li class="bingo-card--item">
                     3
@@ -39,8 +39,11 @@
     <!-- Modal Structure -->
     <div id="modal" class="modal">
         <div class="modal-content">
-            <p>A bunch of text</p>
+            
         </div>
+        <input id="radio-A" type="radio" name="team" value="A"/><label for="radio-A">TEAM-A</label>
+        <input id="radio-B" type="radio" name="team" value="B"/><label for="radio-B">TEAM-B</label>
+        <input id="radio-C" type="radio" name="team" value="C"/><label for="radio-C">TEAM-C</label>
         <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>

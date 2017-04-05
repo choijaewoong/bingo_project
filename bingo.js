@@ -86,9 +86,28 @@ var bingo = {
 
 $(function() {
     $('.modal').modal({
+        num: -1,
         ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
             var question = trigger.data('question');
+            num = trigger.data('num');
             modal.find('.modal-content').text(question);
         },
+        complete: function() {
+            var team = $(this).find('input[name=team]:checked').val();
+            switch(team) {
+                case "A" :
+                    $("#question-" + num).css('background-color', '#53777A');
+                    break;
+                case "B" :
+                    $("#question-" + num).css('background-color', '#C02942');
+                    break;
+                case "C" :
+                    console.log(team + "/" + num);
+                    $("#question-" + num).css('background-color', '#ECD078');
+                    break;
+                default :
+                    break;
+            }
+        }
     });
 });
