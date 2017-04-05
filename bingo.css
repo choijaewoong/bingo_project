@@ -44,6 +44,10 @@ table {
 	border-spacing: 0;
 }
 
+a {
+    color: #fff;
+}
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -51,17 +55,10 @@ table {
 }
 
 /* Custom */
-.body {
+/*.body {
     min-width: 960px;
-}
+}*/
 
-.container:after {
-   display:block;
-   overflow:hidden;
-   clear: both;
-   height: 0;
-   content: '';
-}
 .container__bingo {
     width: 920px;
     margin: 0 auto;
@@ -91,15 +88,20 @@ table {
 }
 
 .bingo-card--item {
+    float: left;
+    margin: 10px;
+    width: 160px;
+    height: 200px;
+    background-color: #888;
+}
+
+.card--link {
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    float: left;
-    margin: 10px;
-    width: 160px;
-    height: 200px;
-    background-color: #888;
+    width: 100%;
+    height: 100%;
 }

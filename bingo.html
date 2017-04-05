@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="./bingo.css">
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
     <title>BINGO IN TOS</title>
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
         <header></header>
         <div class="container__bingo">
             <ul class="bingo-card">
                 <li class="bingo-card--item">
-                    1    
+                    <a class="card--link" href="#asdfa">Modal1</a>    
                 </li>
                 <li class="bingo-card--item">
-                    2
+                    <a class="card--link" href="#asdfa">Modal2</a>
                 </li>
-                <li class="bingo-card--item">
+                <!--<li class="bingo-card--item">
                     3
                 </li>
                 <li class="bingo-card--item">
@@ -26,10 +31,21 @@
                 </li>
                 <li class="bingo-card--item">
                     5
-                </li>
+                </li>-->
             </ul>
         </div>
-        <footer></footer>
-    </div>   
+        <footer></footer>        
+    </div>
+    <!-- Modal Structure -->
+    <div id="asdfa" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>  
+    <script src="./bingo.js"></script>   
 </body>
 </html>
