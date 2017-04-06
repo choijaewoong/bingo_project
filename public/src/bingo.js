@@ -132,9 +132,6 @@ var bingo = {
 $(function() {
 
     var cardList = $(".bingo-card");
-    // var cardItem = $("#bingo-card-template").html();
-    // cardList.append(cardItem);
-
     var cardItem = "";
     for (var i = 0; i < bingo.questions.length; i++) {
         var content = bingo.questions[i];
@@ -145,7 +142,6 @@ $(function() {
     }
     cardList.append(cardItem);
     
-
     $('.modal').modal({
         num: -1,
         ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.

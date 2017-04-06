@@ -10,7 +10,6 @@
     <!-- Compiled and minified JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
-    <script src="src/bingo.js"></script>
     <title>BINGO IN TOS</title>
 </head>
 <body>
@@ -18,7 +17,7 @@
         <header></header>
         <div class="container__bingo">
             <ul class="bingo-card">
-
+                <!-- Card Item -->
             </ul>
         </div>
         <footer></footer>        
@@ -34,13 +33,7 @@
         <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>
-    </div>
-    <script id="bingo-card-template" type="text/javascript">
-        <% for(var i = 0; i < 5; i++) { %>
-            <li class="bingo-card--item">
-                <a id="<%= 'question-' + i %>" class="card--link" href="#modal" data-num="<%= i %>" data-question="<%= 'question-' + 1 %>">Modal<%= i %></a>
-            </li>
-        <% } %> 
-    </script>  
+    </div> 
+    <script src="src/bingo.js"></script>
 </body>
 </html>
