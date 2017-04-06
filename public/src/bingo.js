@@ -197,7 +197,7 @@ $(function() {
             let team = Team.teams[teamNum];
             changeColor(team, questionNum);
             rightQuestion(team, questionNum);
-            checkBingo(team, questionNum);
+            hitBingo(team, questionNum);
         }
     });
 });
@@ -210,16 +210,29 @@ function rightQuestion(team, questionNum) {
     team.score += 10;
 }
 
-function checkBingo(team, questionNum) {
+function hitBingo(team, questionNum) {
     var temp = 0;
     if(isColBingo(team, questionNum)) {
+        console.log("Hit Column Bingo!!!");
         temp += 50;
     }
     if(isRowBingo(team, questionNum)) {
+        console.log("Hit Row Bingo!!!");
         temp += 50;
     }
-    team.score += temp;    
-    console.log(team.score);
+    if(isLeftDiaBingo(team, questionNum)) {
+        console.log("Hit Diagonal Bingo!!!");
+        temp += 50;
+    }
+    if(isRightDiaBingo(team, questionNum)) {
+        console.log("Hit Diagonal Bingo!!!");
+        temp += 50;
+    }
+    team.score += temp;
+    for(var i=0; i<Team.teams.length; i++) {
+        let temp = Team.teams[i];
+        console.log(temp.name + ": " + temp.score);
+    }
 }
 
 // 행 검사
@@ -232,7 +245,6 @@ function isColBingo(team, questionNum) {
     }
     return true;
 }
-
 // 열 검사
 function isRowBingo(team, questionNum) {
     var row = parseInt(questionNum % SIZE);
@@ -244,5 +256,29 @@ function isRowBingo(team, questionNum) {
     return true;
 }
 
-function hitBingo(teamNum, questionNum) {
+// 대각선 검사
+function isLeftDiaBingo(team, questionNum) {
+    if(questionNum % (SIZE+1) !== 0) {
+        return false;
+    }
+    for(var i = 0; i < (SIZE+1) * (SIZE); i += (SIZE+1)) {
+        if(!team.rightQuestions.includes(i)) {
+            return false;
+        }
+    }
+    return true;
+}
+function isRightDiaBingo(team, questionNum) {
+    if(questionNum % (SIZE-1) !== 0) {
+        return false;
+    }
+    if(questionNum === 0 || questionNum === (SIZE * SIZE)-1) {
+        return false;
+    }
+    for(var i = (SIZE-1); i <= (SIZE-1) * (SIZE); i += (SIZE-1)) {        
+        if(!team.rightQuestions.includes(i)) {
+            return false;
+        }
+    }
+    return true;
 }
