@@ -134,21 +134,27 @@ var Team = {
             name: "A",
             score: 0,
             bingoCount: 0,
+            teamColor: "#53777A",
             correctQuestions : []
         },
         {
             name: "B",
             score: 0,
             bingoCount: 0,
+            teamColor: "#C02942",
             correctQuestions : []
         },
         {
             name: "C",
             score: 0,
             bingoCount: 0,
+            teamColor: "#ECD078",
             correctQuestions : []
         }
-    ]
+    ],
+    addScore : function(teamNum) {
+        this.teams[teamNum].score += 10;
+    }
 };
 
 
@@ -158,7 +164,7 @@ $(function() {
     var cardList = $(".bingo-card");
     var cardItem = "";
     for (var i = 0; i<Bingo.questions.length; i++) {
-        question = Bingo.questions[i];
+        let question = Bingo.questions[i];
         cardItem += 
             "<li class='bingo-card--item'>\
                 <a id='question-" + question.num + "' class='card--link' href='#modal' data-num='" + question.num + "' data-question='question-" + question.question + "'>Modal" + question.num + "</a>\
@@ -170,34 +176,32 @@ $(function() {
     var btnSelectTeam = $("#radio-btn-team");
     var teamItem = "";
     for(var i = 0; i<Team.teams.length; i++) {
-        var team = Team.teams[i];
+        let team = Team.teams[i];
         teamItem +=
-            "<input id='radio-" + team.name + "' type='radio' name='team' value='"+ team.name + "'/><label for='radio-" + team.name + "'>" + team.name + "</label>";
+            "<input id='radio-" + team.name + "' type='radio' name='team' value='"+ i + "'/><label for='radio-" + team.name + "'>" + team.name + "</label>";
     }
     btnSelectTeam.append(teamItem);
     
     $('.modal').modal({
         num: -1,
         ready: function(modal, trigger) {
-            var question = trigger.data('question');
+            let question = trigger.data('question');
             num = trigger.data('num');
             modal.find('.modal-content').text(question);
         },
         complete: function() {
-            var team = $(this).find('input[name=team]:checked').val();
-            switch(team) {
-                case "A" :
-                    $("#question-" + num).css('background-color', '#53777A');
-                    break;
-                case "B" :
-                    $("#question-" + num).css('background-color', '#C02942');
-                    break;
-                case "C" :
-                    $("#question-" + num).css('background-color', '#ECD078');
-                    break;
-                default :
-                    break;
-            }
+            let teamNum = $(this).find('input[name=team]:checked').val();
+            let team = Team.teams[teamNum];
+            changeColor(team, num);
+            addScore(teamNum);
         }
     });
 });
+
+function changeColor(team, num) {
+    $("#question-" + num).css('background-color', team.teamColor);
+}
+function addScore(teamNum) {
+    Team.addScore(teamNum);
+    console.log(Team);
+}
