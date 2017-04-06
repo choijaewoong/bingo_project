@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/choijaewoong/bingo_project#readme",
   "dependencies": {
+    "ejs-locals": "^1.0.2",
     "express": "^4.15.2",
     "path": "^0.12.7"
   }

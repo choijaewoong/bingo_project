@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/bingo.css">
+    <link rel="stylesheet" type="text/css" href="src/bingo.css">
     <!-- Compiled and minified JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
@@ -17,21 +17,11 @@
         <header></header>
         <div class="container__bingo">
             <ul class="bingo-card">
-                <li class="bingo-card--item">
-                    <a id="question-1" class="card--link" href="#modal" data-num="1" data-question="question-1">Modal1</a>
-                </li>
-                <li class="bingo-card--item">
-                    <a id="question-2" class="card--link" href="#modal" data-num="2" data-question="question-2">Modal1</a>    
-                </li>
-                <li class="bingo-card--item">
-                    <a id="question-3" class="card--link" href="#modal" data-num="3" data-question="question-3">Modal1</a>    
-                </li>
-                <li class="bingo-card--item">
-                    <a id="question-4" class="card--link" href="#modal" data-num="4" data-question="question-4">Modal1</a>    
-                </li>
-                <li class="bingo-card--item">
-                    <a id="question-5" class="card--link" href="#modal" data-num="5" data-question="question-5">Modal1</a>    
-                </li>
+                <% for(var i = 0; i < 5; i++) { %>
+                    <li class="bingo-card--item">
+                        <a id="<%- 'question-' + i %>" class="card--link" href="#modal" data-num="<%= i %>" data-question="<%= 'question-' + 1 %>">Modal<%- i %></a>
+                    </li>
+                <% } %>                
             </ul>
         </div>
         <footer></footer>        
@@ -48,6 +38,6 @@
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>
     </div>  
-    <script src="/bingo.js"></script>   
+    <script src="src/bingo.js"></script>   
 </body>
 </html>
