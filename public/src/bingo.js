@@ -206,25 +206,37 @@ function changeColor(team, questionNum) {
     $("#question-" + questionNum).css('background-color', team.teamColor);
 }
 function rightQuestion(team, questionNum) {
-    console.log(team);
     team.rightQuestions.push(questionNum);
     team.score += 10;
 }
 
 function checkBingo(team, questionNum) {
-    //가로줄 검사
     var temp = 0;
     if(isColBingo(team, questionNum)) {
-        temp += 50
+        temp += 50;
     }
-    team.score += temp;
+    if(isRowBingo(team, questionNum)) {
+        temp += 50;
+    }
+    team.score += temp;    
     console.log(team.score);
 }
 
+// 행 검사
 function isColBingo(team, questionNum) {
-    var col = parseInt(questionNum / SIZE);
-    var init = col * SIZE;
-    for(var i = init; i < init + SIZE; i++) {
+    var col = parseInt(questionNum / SIZE) * SIZE;
+    for(var i = col; i < col + SIZE; i++) {
+        if(!team.rightQuestions.includes(i)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// 열 검사
+function isRowBingo(team, questionNum) {
+    var row = parseInt(questionNum % SIZE);
+    for(var i = row; i <= row + (SIZE-1) * SIZE ; i += SIZE) {
         if(!team.rightQuestions.includes(i)) {
             return false;
         }
@@ -233,5 +245,4 @@ function isColBingo(team, questionNum) {
 }
 
 function hitBingo(teamNum, questionNum) {
-
 }

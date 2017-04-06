@@ -13,6 +13,6 @@ app.get('/', function (req, res) {
   res.render(path.join(__dirname, 'public/bingo'));
 });
 
-app.listen(8000, function () {
+app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 });
