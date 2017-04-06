@@ -1,0 +1,24 @@
+{
+  "name": "bingo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bingo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choijaewoong/bingo_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/choijaewoong/bingo_project/issues"
+  },
+  "homepage": "https://github.com/choijaewoong/bingo_project#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "path": "^0.12.7"
+  }
+}

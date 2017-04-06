@@ -102,7 +102,6 @@ $(function() {
                     $("#question-" + num).css('background-color', '#C02942');
                     break;
                 case "C" :
-                    console.log(team + "/" + num);
                     $("#question-" + num).css('background-color', '#ECD078');
                     break;
                 default :
