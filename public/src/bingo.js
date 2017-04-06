@@ -79,12 +79,73 @@ var bingo = {
             check: null,
             num: 16,
             question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
-        }        
+        },
+        {
+            check: null,
+            num: 17,
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+        },
+        {
+            check: null,
+            num: 18,
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+        },
+        {
+            check: null,
+            num: 19,
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+        },
+        {
+            check: null,
+            num: 20,
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+        },
+        {
+            check: null,
+            num: 21,
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+        },
+        {
+            check: null,
+            num: 22,
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+        },
+        {
+            check: null,
+            num: 23,
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+        },
+        {
+            check: null,
+            num: 24,
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+        },
+        {
+            check: null,
+            num: 25,
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+        }
     ]
 };
 
 
 $(function() {
+
+    var cardList = $(".bingo-card");
+    // var cardItem = $("#bingo-card-template").html();
+    // cardList.append(cardItem);
+
+    var cardItem = "";
+    for (var i = 0; i < bingo.questions.length; i++) {
+        var content = bingo.questions[i];
+        cardItem += 
+            "<li class='bingo-card--item'>\
+                <a id='question-" + content.num + "' class='card--link' href='#modal' data-num='" + content.num + "' data-question='question-" + content.question + "'>Modal" + content.num + "</a>\
+            </li>";                
+    }
+    cardList.append(cardItem);
+    
+
     $('.modal').modal({
         num: -1,
         ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
