@@ -128,9 +128,33 @@ var bingo = {
     ]
 };
 
+var team = {
+    teams : [
+        {
+            name: "A",
+            score: 0,
+            bingoCount: 0,
+            correctQuestions : []
+        },
+        {
+            name: "B",
+            score: 0,
+            bingoCount: 0,
+            correctQuestions : []
+        },
+        {
+            name: "C",
+            score: 0,
+            bingoCount: 0,
+            correctQuestions : []
+        }
+    ]
+};
+
 
 $(function() {
 
+    // 빙고 보드 생성
     var cardList = $(".bingo-card");
     var cardItem = "";
     for (var i = 0; i < bingo.questions.length; i++) {
@@ -141,10 +165,21 @@ $(function() {
             </li>";                
     }
     cardList.append(cardItem);
+
+    // 팀 선택 라디오 생성
+    var btnSelectTeam = $("#radio-btn-team");
+    var teamItem = "";
+    for (var i = 0; i < team.teams.length; i++) {       
+        var a = team.teams[i];
+        console.log(a);
+        teamItem +=
+            "<input id='radio-" + a.name + "' type='radio' name='team' value='"+ a.name + "'/><label for='radio-" + a.name + "'>" + a.name + "</label>";
+    }
+    btnSelectTeam.append(teamItem);
     
     $('.modal').modal({
         num: -1,
-        ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+        ready: function(modal, trigger) {
             var question = trigger.data('question');
             num = trigger.data('num');
             modal.find('.modal-content').text(question);
