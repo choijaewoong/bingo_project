@@ -2,6 +2,11 @@ var Bingo = {
     questions : [
         {
             check: null,
+            num: 0,
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+        },
+        {
+            check: null,
             num: 1,
             question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
@@ -119,11 +124,6 @@ var Bingo = {
             check: null,
             num: 24,
             question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
-        },
-        {
-            check: null,
-            num: 25,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         }
     ]
 };
@@ -135,27 +135,30 @@ var Team = {
             score: 0,
             bingoCount: 0,
             teamColor: "#53777A",
-            correctQuestions : []
+            rightQuestions : []
         },
         {
             name: "B",
             score: 0,
             bingoCount: 0,
             teamColor: "#C02942",
-            correctQuestions : []
+            rightQuestions : []
         },
         {
             name: "C",
             score: 0,
             bingoCount: 0,
             teamColor: "#ECD078",
-            correctQuestions : []
+            rightQuestions : []
         }
     ],
-    addScore : function(teamNum) {
+    rightQuestion : function(teamNum, questionNum) {
+        this.teams[teamNum].rightQuestions.push(questionNum);
         this.teams[teamNum].score += 10;
     }
 };
+
+const SIZE = 5;
 
 
 $(function() {
@@ -186,22 +189,49 @@ $(function() {
         num: -1,
         ready: function(modal, trigger) {
             let question = trigger.data('question');
-            num = trigger.data('num');
+            questionNum = trigger.data('num');
             modal.find('.modal-content').text(question);
         },
         complete: function() {
             let teamNum = $(this).find('input[name=team]:checked').val();
             let team = Team.teams[teamNum];
-            changeColor(team, num);
-            addScore(teamNum);
+            changeColor(team, questionNum);
+            rightQuestion(team, questionNum);
+            checkBingo(team, questionNum);
         }
     });
 });
 
-function changeColor(team, num) {
-    $("#question-" + num).css('background-color', team.teamColor);
+function changeColor(team, questionNum) {
+    $("#question-" + questionNum).css('background-color', team.teamColor);
 }
-function addScore(teamNum) {
-    Team.addScore(teamNum);
-    console.log(Team);
+function rightQuestion(team, questionNum) {
+    console.log(team);
+    team.rightQuestions.push(questionNum);
+    team.score += 10;
+}
+
+function checkBingo(team, questionNum) {
+    //가로줄 검사
+    var temp = 0;
+    if(isColBingo(team, questionNum)) {
+        temp += 50
+    }
+    team.score += temp;
+    console.log(team.score);
+}
+
+function isColBingo(team, questionNum) {
+    var col = parseInt(questionNum / SIZE);
+    var init = col * SIZE;
+    for(var i = init; i < init + SIZE; i++) {
+        if(!team.rightQuestions.includes(i)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function hitBingo(teamNum, questionNum) {
+
 }
