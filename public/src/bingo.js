@@ -1,4 +1,4 @@
-var bingo = {
+var Bingo = {
     questions : [
         {
             check: null,
@@ -128,7 +128,7 @@ var bingo = {
     ]
 };
 
-var team = {
+var Team = {
     teams : [
         {
             name: "A",
@@ -157,11 +157,11 @@ $(function() {
     // 빙고 보드 생성
     var cardList = $(".bingo-card");
     var cardItem = "";
-    for (var i = 0; i < bingo.questions.length; i++) {
-        var content = bingo.questions[i];
+    for (var i = 0; i<Bingo.questions.length; i++) {
+        question = Bingo.questions[i];
         cardItem += 
             "<li class='bingo-card--item'>\
-                <a id='question-" + content.num + "' class='card--link' href='#modal' data-num='" + content.num + "' data-question='question-" + content.question + "'>Modal" + content.num + "</a>\
+                <a id='question-" + question.num + "' class='card--link' href='#modal' data-num='" + question.num + "' data-question='question-" + question.question + "'>Modal" + question.num + "</a>\
             </li>";                
     }
     cardList.append(cardItem);
@@ -169,11 +169,10 @@ $(function() {
     // 팀 선택 라디오 생성
     var btnSelectTeam = $("#radio-btn-team");
     var teamItem = "";
-    for (var i = 0; i < team.teams.length; i++) {       
-        var a = team.teams[i];
-        console.log(a);
+    for(var i = 0; i<Team.teams.length; i++) {
+        var team = Team.teams[i];
         teamItem +=
-            "<input id='radio-" + a.name + "' type='radio' name='team' value='"+ a.name + "'/><label for='radio-" + a.name + "'>" + a.name + "</label>";
+            "<input id='radio-" + team.name + "' type='radio' name='team' value='"+ team.name + "'/><label for='radio-" + team.name + "'>" + team.name + "</label>";
     }
     btnSelectTeam.append(teamItem);
     
