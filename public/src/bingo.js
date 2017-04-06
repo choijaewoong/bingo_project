@@ -127,7 +127,6 @@ var Bingo = {
         }
     ]
 };
-
 var Team = {
     teams : [
         {
@@ -157,7 +156,6 @@ var Team = {
         this.teams[teamNum].score += 10;
     }
 };
-
 const SIZE = 5;
 
 
@@ -185,20 +183,36 @@ $(function() {
     }
     btnSelectTeam.append(teamItem);
     
-    $('.modal').modal({
-        num: -1,
-        ready: function(modal, trigger) {
-            let question = trigger.data('question');
-            questionNum = trigger.data('num');
-            modal.find('.modal-content').text(question);
-        },
-        complete: function() {
-            let teamNum = $(this).find('input[name=team]:checked').val();
-            let team = Team.teams[teamNum];
-            changeColor(team, questionNum);
-            rightQuestion(team, questionNum);
-            hitBingo(team, questionNum);
-        }
+    // $('.modal').modal({
+    //     num: -1,
+    //     ready: function(modal, trigger) {
+    //         let question = trigger.data('question');
+    //         questionNum = trigger.data('num');
+    //         modal.find('.modal-content').text(question);
+    //     },
+    //     complete: function() {
+    //         let teamNum = $(this).find('input[name=team]:checked').val();
+    //         let team = Team.teams[teamNum];
+    //         changeColor(team, questionNum);
+    //         rightQuestion(team, questionNum);
+    //         hitBingo(team, questionNum);
+    //     }
+    // });
+    $('.card--link').click(function(e){
+        $('.ui.modal').modal({
+            onShow: function() {
+                let modal = $("#modal");
+                let trigger = e.target.dataset;
+                let question = trigger['question'];
+                questionNum = trigger['num'];
+                modal.find('.content').text(question);
+            },
+            onApprove: function() {
+                
+            }
+
+        })
+        .modal('show');
     });
 });
 
