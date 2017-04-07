@@ -3,127 +3,152 @@ var Bingo = {
         {
             check: null,
             num: 0,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 1,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 2,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 3,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 4,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 5,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 6,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 7,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 8,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 9,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 10,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 11,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",            
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 12,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 13,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 14,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 15,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 16,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 17,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 18,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 19,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 20,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 21,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 22,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 23,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         },
         {
             check: null,
             num: 24,
-            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod.",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend diam id eros convallis accumsan. Proin porta risus in purus accumsan rutrum. Aliquam rutrum nulla facilisis eros bibendum pulvinar. Nulla ut malesuada mauris, quis egestas diam. Curabitur in felis ut sem condimentum porttitor vitae a nunc. Integer at dolor elit. Vivamus fermentum sed massa ut euismod."
         }
     ]
 };
@@ -160,6 +185,10 @@ const SIZE = 5;
 
 $(function() {
 
+    //Semantic UI
+    $('.ui.checkbox').checkbox(); // checkbox full features
+    $('.ui.accordion').accordion();
+
     // 헤더 초기 세팅
     var teamList = $("#header__team-list");
     var teamScoreItem = "";
@@ -181,7 +210,7 @@ $(function() {
         let question = Bingo.questions[i];
         cardItem += 
             "<li class='bingo-card__item'>\
-                <a id='question-" + question.num + "' class='card__link' href='#modal' data-num=" + question.num + " data-question='question-" + question.question + "'>Modal" + question.num + "</a>\
+                <a id='question-" + question.num + "' class='card__link' href='#modal' data-num=" + question.num + ">Modal" + question.num + "</a>\
             </li>";
     }
     cardList.append(cardItem);
@@ -201,16 +230,16 @@ $(function() {
     }
     btnSelectTeam.append(teamBtnItem);
 
-    $('.ui.checkbox').checkbox(); // checkbox full features
-
     $('.card__link').click(function(e){
         let modal = $("#modal");
         let trigger = this.dataset;        
         let questionNum = parseInt(trigger['num']);
         $('.ui.modal').modal({
             onShow: function() {
-                let question = trigger['question'];                
-                modal.find('.content').text(question);
+                let question = Bingo.questions[questionNum].question;
+                let answer = Bingo.questions[questionNum].answer;
+                modal.find('#modal-question').text(question);
+                modal.find('#modal-answer').text(answer);
             },
             onApprove: function() {
                 let teamNum = modal.find('input[name=team]:checked').val();

@@ -122,3 +122,8 @@ a:hover {
     height: 100%;
     background-color: #eee;
 }
+
+/* Semantic-UI Override */
+.ui.styled.accordion {
+    width: 100%;
+}
