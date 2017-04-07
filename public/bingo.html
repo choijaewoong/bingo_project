@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.9/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="src/bingo.css">
     <!-- Compiled and minified JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.9/semantic.min.js"></script>
     <title>BINGO IN TOS</title>
 </head>
 <body>
@@ -23,15 +25,24 @@
         <footer></footer>        
     </div>
     <!-- Modal Structure -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            
+    <div id="modal" class="ui modal">
+        <div class="header">
+            Question
+        </div>
+        <div class="content">
+
         </div>
         <!-- Team -->
-        <div id="radio-btn-team">            
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <div class="actions">
+            <div class="ui form">
+                <div id="radio-btn-team" class="inline fields">
+                </div>
+            </div>                     
+            <div class="ui black deny button">cancel</div>
+            <div class="ui positive right labeled icon button">
+                Correct
+                <i class="checkmark icon"></i>
+            </div>
         </div>
     </div> 
     <script src="src/bingo.js"></script>
