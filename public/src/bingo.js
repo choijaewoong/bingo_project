@@ -185,10 +185,6 @@ const SIZE = 5;
 
 $(function() {
 
-    //Semantic UI
-    $('.ui.checkbox').checkbox(); // checkbox full features
-    $('.ui.accordion').accordion();
-
     // 헤더 초기 세팅
     var teamList = $("#header__team-list");
     var teamScoreItem = "";
@@ -230,6 +226,10 @@ $(function() {
     }
     btnSelectTeam.append(teamBtnItem);
 
+    //Semantic UI
+    $('.ui.checkbox').checkbox(); // checkbox full features
+    $('.ui.accordion').accordion();
+
     $('.card__link').click(function(e){
         let modal = $("#modal");
         let trigger = this.dataset;        
@@ -245,6 +245,9 @@ $(function() {
                 let teamNum = modal.find('input[name=team]:checked').val();
                 let team = Team.teams[teamNum];
                 setScore(team, questionNum);
+            },
+            dimmerSettings: {
+                opacity: 0.5
             }
         })
         .modal('show');
