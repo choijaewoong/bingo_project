@@ -168,8 +168,8 @@ $(function() {
         let question = Bingo.questions[i];
         cardItem += 
             "<li class='bingo-card--item'>\
-                <a id='question-" + question.num + "' class='card--link' href='#modal' data-num='" + question.num + "' data-question='question-" + question.question + "'>Modal" + question.num + "</a>\
-            </li>";                
+                <a id='question-" + question.num + "' class='card--link' href='#modal' data-num=" + question.num + " data-question='question-" + question.question + "'>Modal" + question.num + "</a>\
+            </li>";
     }
     cardList.append(cardItem);
 
@@ -179,10 +179,17 @@ $(function() {
     for(var i = 0; i<Team.teams.length; i++) {
         let team = Team.teams[i];
         teamItem +=
-            "<input id='radio-" + team.name + "' type='radio' name='team' value='"+ i + "'/><label for='radio-" + team.name + "'>" + team.name + "</label>";
+            "<div class='field'>\
+                <div class='ui radio checkbox'>\
+                    <input type='radio' name='team' value='"+ i + "'/>\
+                    <label>" + team.name + "</label>\
+                </div>\
+            </div>";
     }
     btnSelectTeam.append(teamItem);
-    
+
+    $('.ui.checkbox').checkbox();
+
     // $('.modal').modal({
     //     num: -1,
     //     ready: function(modal, trigger) {
@@ -199,18 +206,21 @@ $(function() {
     //     }
     // });
     $('.card--link').click(function(e){
+        let modal = $("#modal");
+        let trigger = this.dataset;        
+        let questionNum = parseInt(trigger['num']);
         $('.ui.modal').modal({
             onShow: function() {
-                let modal = $("#modal");
-                let trigger = e.target.dataset;
-                let question = trigger['question'];
-                questionNum = trigger['num'];
+                let question = trigger['question'];                
                 modal.find('.content').text(question);
             },
             onApprove: function() {
-                
+                let teamNum = modal.find('input[name=team]:checked').val();
+                let team = Team.teams[teamNum];
+                changeColor(team, questionNum);
+                rightQuestion(team, questionNum);
+                hitBingo(team, questionNum);
             }
-
         })
         .modal('show');
     });
