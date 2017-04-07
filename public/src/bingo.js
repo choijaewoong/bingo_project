@@ -199,14 +199,14 @@ $(function() {
     }
     teamList.append(teamScoreItem);
 
-    // 빙고 보드 생성
+    // bingo board 생성
     var cardList = $(".bingo-card");
     var cardItem = "";
     for (var i = 0; i<Bingo.questions.length; i++) {
         let question = Bingo.questions[i];
         cardItem += 
             "<li class='bingo-card__item'>\
-                <a id='question-" + question.num + "' class='card__link' href='#modal' data-num=" + question.num + ">Modal" + question.num + "</a>\
+                <a id='question-" + question.num + "' class='ui button card__link' href='#modal' data-num=" + question.num + ">Modal" + question.num + "</a>\
             </li>";
     }
     cardList.append(cardItem);
