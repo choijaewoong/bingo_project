@@ -158,8 +158,21 @@ var Team = {
 };
 const SIZE = 5;
 
-
 $(function() {
+
+    // 헤더 초기 세팅
+    var teamList = $("#header__team-list");
+    var teamScoreItem = "";
+    for(var i = 0; i<Team.teams.length; i++) {
+        let team = Team.teams[i];
+        teamScoreItem +=
+            '<li class="item header__team">\
+                    <strong class="name">' + team.name + '</strong>\
+                    <span id="header-score-' + team.name + '" class="score">score: ' + team.score + '</span>\
+                    <span id="header-bingo-' + team.name + '" class="bingo">bingo: ' + team.bingoCount + '</span>\
+            </li>';
+    }
+    teamList.append(teamScoreItem);
 
     // 빙고 보드 생성
     var cardList = $(".bingo-card");
@@ -167,18 +180,18 @@ $(function() {
     for (var i = 0; i<Bingo.questions.length; i++) {
         let question = Bingo.questions[i];
         cardItem += 
-            "<li class='bingo-card--item'>\
-                <a id='question-" + question.num + "' class='card--link' href='#modal' data-num=" + question.num + " data-question='question-" + question.question + "'>Modal" + question.num + "</a>\
+            "<li class='bingo-card__item'>\
+                <a id='question-" + question.num + "' class='card__link' href='#modal' data-num=" + question.num + " data-question='question-" + question.question + "'>Modal" + question.num + "</a>\
             </li>";
     }
     cardList.append(cardItem);
 
     // 팀 선택 라디오 생성
     var btnSelectTeam = $("#radio-btn-team");
-    var teamItem = "";
+    var teamBtnItem = "";
     for(var i = 0; i<Team.teams.length; i++) {
         let team = Team.teams[i];
-        teamItem +=
+        teamBtnItem +=
             "<div class='field'>\
                 <div class='ui radio checkbox'>\
                     <input type='radio' name='team' value='"+ i + "'/>\
@@ -186,26 +199,11 @@ $(function() {
                 </div>\
             </div>";
     }
-    btnSelectTeam.append(teamItem);
+    btnSelectTeam.append(teamBtnItem);
 
-    $('.ui.checkbox').checkbox();
+    $('.ui.checkbox').checkbox(); // checkbox full features
 
-    // $('.modal').modal({
-    //     num: -1,
-    //     ready: function(modal, trigger) {
-    //         let question = trigger.data('question');
-    //         questionNum = trigger.data('num');
-    //         modal.find('.modal-content').text(question);
-    //     },
-    //     complete: function() {
-    //         let teamNum = $(this).find('input[name=team]:checked').val();
-    //         let team = Team.teams[teamNum];
-    //         changeColor(team, questionNum);
-    //         rightQuestion(team, questionNum);
-    //         hitBingo(team, questionNum);
-    //     }
-    // });
-    $('.card--link').click(function(e){
+    $('.card__link').click(function(e){
         let modal = $("#modal");
         let trigger = this.dataset;        
         let questionNum = parseInt(trigger['num']);
@@ -217,15 +215,19 @@ $(function() {
             onApprove: function() {
                 let teamNum = modal.find('input[name=team]:checked').val();
                 let team = Team.teams[teamNum];
-                changeColor(team, questionNum);
-                rightQuestion(team, questionNum);
-                hitBingo(team, questionNum);
+                setScore(team, questionNum);
             }
         })
         .modal('show');
     });
 });
 
+function setScore(team, questionNum) {
+    changeColor(team, questionNum);
+    rightQuestion(team, questionNum);
+    hitBingo(team, questionNum);
+    setScoreBoard(team);
+}
 function changeColor(team, questionNum) {
     $("#question-" + questionNum).css('background-color', team.teamColor);
 }
@@ -233,7 +235,6 @@ function rightQuestion(team, questionNum) {
     team.rightQuestions.push(questionNum);
     team.score += 10;
 }
-
 function hitBingo(team, questionNum) {
     var temp = 0;
     if(isColBingo(team, questionNum)) {
@@ -257,6 +258,13 @@ function hitBingo(team, questionNum) {
         let temp = Team.teams[i];
         console.log(temp.name + ": " + temp.score);
     }
+}
+function setScoreBoard(team) {
+    var teamScore = $("#header-score-" + team.name);
+    var teamBingo = $("#header-bingo-" + team.name);
+    console.log(teamScore.text() + "/" + teamBingo.text());
+    teamScore.text("score: " + team.score);
+    teamBingo.text("bingo: " + team.bingoCount);
 }
 
 // 행 검사
